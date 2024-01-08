@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Monserrat', sans-serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.btn-outline:hover {
+    background: #00000070;
+    color: #000;
+}
+
+#navbar {
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navbar a {
+    color: #000;
+}
+/* 
+#navbar .logo {
+    float: left;
+    
+    padding-top: 12px;
+} */
+
+
+#navbar img {
+    height: 70px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#showcase {
+    background: url('/img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    padding: 100px;
+}
+
+#showcase .container h1{
+    text-align: center;
+    color: #f9f9f9;
+}
+
+#showcase .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#showcase .btn {
+   margin-top: 250px;
+}
+
+#projects {
+    padding: 80px 0;
+}
+
+.projects-row {
+    display: flex;
+}
+
+.projects-row img {
+    width: 100%;
+}
+
+#about {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.about-row {
+    display: flex;
+}
+
+.about-row-experience,
+.about-row-me {
+    width: 50%;
+    padding-left: 50px;
+}
+
+#contact {
+    padding: 80px 0;
+}
+
+.contact-row {
+    display: flex;
+}
+
+.contact-row-icon {
+    width: 33%;
+    text-align: center;
+}
+
+.contact-row-icon img {
+    height: 60px;
+}
+
+#mainfooter {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 30px;
+}
+
+/* .navbar-logo {
+    height: 100px;
+    width: 100px;
+} */
+
+.nav-item{
+    margin-right: auto;
+    display: flex;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .contact-row {
+        flex-direction: column; /* Cambiar a columna en dispositivos móviles /
+        align-items: center; / Centrar los elementos en dispositivos móviles */
+    }
+
+    .contact-row-icon {
+        flex: 1 1 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-row-me {
+        margin-top: 50px;
+    }
+
+    .about-row-me h4{
+        font-size: 1.5rem;
+    }
+
+    #about .container h2{
+        font-size: 2rem;
+    }
+
+    .about-row-experience h4{
+        font-size: 1.5rem;
+    }
+}
+
+.nav-link {
+    color: #000;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container{
+        margin: 0;
+    }
+    
+}
+
+
+
